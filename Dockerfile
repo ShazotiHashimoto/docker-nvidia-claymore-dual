@@ -19,4 +19,4 @@ RUN wget -q "https://docs.google.com/uc?id=${CLAYMORE_GDRIVE_ID}&export=download
     tar --strip=1 -xzvf claymore.tar.gz && \
     rm claymore.tar.gz claymore.tar.gz.sha256
 
-ENTRYPOINT /opt/claymore/ethdcrminer64
+ENTRYPOINT [ "/opt/claymore/ethdcrminer64" ]
