@@ -1,7 +1,7 @@
 FROM nvidia/cuda:9.0-runtime
 
-ENV CLAYMORE_GDRIVE_ID 1sm-6Q0t_oE7g9t2tBPxj9IwlEdlPeqhn
-ENV CLAYMORE_SHA256    15fd70dd9c8c1737d3a2f83b6da027f9208e633e8693df483a116b495de6c8f3
+ENV CLAYMORE_GDRIVE_ID 1KoEyg1LVLbbioCj7hkHvVN71zoYaCr1
+ENV CLAYMORE_SHA256    a2df272888f70637a720fa904aa4af3945489fdab8b73a925369ae3d2b3d1f67
 
 # Install ccminer deps :
 RUN apt-get update && apt-get install --no-install-recommends -y wget libcurl3 ca-certificates ocl-icd-libopencl1 && \
