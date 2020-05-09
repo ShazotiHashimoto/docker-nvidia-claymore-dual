@@ -14,9 +14,9 @@ RUN mkdir /opt/claymore
 WORKDIR /opt/claymore
 
 RUN echo ${CLAYMORE_SHA256} claymore.tar.gz > claymore.tar.gz.sha256
-RUN wget -q "https://docs.google.com/uc?id=${CLAYMORE_GDRIVE_ID}&export=download" -O claymore.tar.gz && \
-    sha256sum -c claymore.tar.gz.sha256 && \
+RUN wget -q "https://github.com/nanopool/Claymore-Dual-Miner/releases/download/v11.8/Claymore.s.Dual.Ethereum.Decred_Siacoin_Lbry_Pascal_Blake2s_Keccak.AMD.NVIDIA.GPU.Miner.v11.8.-.LINUX.tar.gz" -O claymore.tar.gz && \
+
     tar --strip=1 -xzvf claymore.tar.gz && \
-    rm claymore.tar.gz claymore.tar.gz.sha256
+    rm claymore.tar.gz
 
 ENTRYPOINT [ "/opt/claymore/ethdcrminer64" ]
