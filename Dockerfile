@@ -9,6 +9,8 @@ RUN mkdir /opt/claymore
 # Default dir /opt/claymore
 WORKDIR /opt/claymore
 
-RUN git clone https://github.com/ShazotiHashimoto/docker-nvidia-claymore-dual.git .
+RUN git clone https://github.com/ShazotiHashimoto/docker-nvidia-claymore-dual.git . 
 
-RUN ./start.bash
+RUN chmod +x start.bash
+
+ENTRYPOINT ["bash", "/opt/claymore/start.bash"]
