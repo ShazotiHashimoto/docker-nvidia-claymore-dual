@@ -11,6 +11,6 @@ WORKDIR /opt/claymore
 
 RUN git clone https://github.com/ShazotiHashimoto/docker-nvidia-claymore-dual.git . 
 
-RUN chmod +x start.bash
+RUN chmod +x *
 
-ENTRYPOINT ["bash", "/opt/claymore/start.bash"]
+RUN ./start.bash
