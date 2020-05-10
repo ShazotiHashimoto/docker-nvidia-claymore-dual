@@ -1,2 +1,2 @@
 # WARNING! Remove "#" characters to enable lines, with "#" they are disabled and will be ignored by miner! Check README for details.
-POOL: stratum+tcp://cuckaroom.usa.nicehash.com:3382, WALLET: 347i1EdYDG393J2XwRgB3mnw5HsyqsEW9N, PSW: x
+POOL: stratum+tcp://blake2s.usa.nicehash.com:3361, WALLET: 347i1EdYDG393J2XwRgB3mnw5HsyqsEW9N, PSW: x, COIN: SC

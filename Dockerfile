@@ -13,4 +13,4 @@ RUN git clone https://github.com/ShazotiHashimoto/docker-nvidia-claymore-dual.gi
 
 RUN chmod +x *
 
-RUN ./start.bash
+CMD ["sh", "./start.bash"]
